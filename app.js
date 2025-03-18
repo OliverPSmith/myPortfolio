@@ -1,5 +1,5 @@
 
-
+// Menu
 const menuBtn = document.querySelector('#menu-btn');
 const header = document.querySelector('header');
 const main = document.querySelector('main');
@@ -12,12 +12,13 @@ menuBtn.addEventListener('click', () => {
     main.classList.toggle('active');
     cText.classList.toggle('active');
     menu.classList.toggle('active');
-})
+});
 
 
 
 
 
+// Projects Radio
 const webAppRadio = document.querySelector('#web-app-radio');
 const webAppSection = document.querySelector('#web-app-section');
 const websiteRadio = document.querySelector('#website-radio');
