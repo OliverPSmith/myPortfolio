@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+
+    --bg-col: rgb(234, 228, 220);
+    --text-col: black;
+    --font-fam: 'Overlock', cursive;
+}
+
+body {
+    font-family: var(--font-fam);
+    padding: 2rem;
+    background-color: var(--bg-col);
+    font-size: 14px;
+    color: var(--text-col);
+}
+
+header, main, code {
+    width: 30rem;
+    max-width: 100%;
+}
+header.active, main.active, code.active {
+    filter: blur(8px);
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+    font-size: 14px;
+}
+
+a {
+    color: var(--text-col);
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+
+/* aside {
+    position: fixed;
+    right: 2rem;
+    z-index: 10;
+} */
+
+#menu-btn {
+    position: fixed;
+    right: 2rem;
+    z-index: 10;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 4rem;
+    right: -20rem;
+    z-index: 10;
+}
+.menu.active {
+    display: block;
+    right: 2rem;
+}
+.menu li {
+    margin-bottom: .25rem;
+}
+
+
+
+
+
+
+
+
+main {
+    margin-top: 2rem;
+}
+
+.projects-radio {
+    display: flex;
+    flex-direction: row;
+}
+
+label, input {
+    cursor: pointer;
+}
+label {
+    margin-right: 2rem;
+}
+label input {
+    margin-right: .25rem;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+article {
+    margin-bottom: 2rem;
+}
+
+.article-header {
+    display: flex;
+    flex-direction: row;
+}
+.article-header h3 {
+    font-style: italic;
+}
+.article-header p {
+    font-variant: small-caps;
+}
+
+.article-header, .article-text {
+    margin-bottom: .25rem;
+}
+
