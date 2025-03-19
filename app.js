@@ -6,16 +6,34 @@ const main = document.querySelector('main');
 const cText = document.querySelector('code');
 const menu = document.querySelector('.menu')
 
-menuBtn.addEventListener('click', () => {
-    console.log('test');
+const menuToggle = () => {
     header.classList.toggle('active');
     main.classList.toggle('active');
     cText.classList.toggle('active');
     menu.classList.toggle('active');
+}
+
+menuBtn.addEventListener('click', menuToggle);
+
+
+// Menu Data Content
+
+const tabs = document.querySelectorAll('[data-tab-target]');
+const tabContents = document.querySelectorAll('[data-tab-content]');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        // make the target (the tab clicked) a dataset variable
+        const target = document.querySelector(tab.dataset.tabTarget)
+        // remove the 'active' class for all tab content
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('active');
+        });
+        // add 'active' class to selected tab content
+        target.classList.add('active');
+        menuToggle();
+    });
 });
-
-
-
 
 
 // Projects Radio

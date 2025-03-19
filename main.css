@@ -83,7 +83,14 @@ li {
 
 
 
+[data-tab-content] {
+    display: none;
+}
 
+.active[data-tab-content] {
+    display: block;
+    height: 100%;
+}
 
 
 

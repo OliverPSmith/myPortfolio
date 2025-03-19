@@ -11,14 +11,15 @@
 </head>
 <body>
 
-    <aside>
+    <menu>
         <h1 id="menu-btn">Menu</h1>
         <ul class="menu">
-            <li>&#8627;&nbsp;&nbsp;<a href="">Programming</a></li>
-            <li>&#8627;&nbsp;&nbsp;<a href="">Tools & Technologies</a></li>
-            <li>&#8627;&nbsp;&nbsp;<a href="">About</a></li>
+            <li>&#8627;&nbsp;&nbsp;<a data-tab-target="#section-projects">Projects</a></li>
+            <li>&#8627;&nbsp;&nbsp;<a data-tab-target="#section-tools">Tools & Technologies</a></li>
+            <li>&#8627;&nbsp;&nbsp;<a data-tab-target="#section-about">About</a></li>
+            <!-- <button>Dark Mode</button> -->
         </ul>
-    </aside>
+    </menu>
 
     <header>
         <h1>Oliver Smith</h1>
@@ -26,7 +27,7 @@
         <p>--</p>
         <ul>
             <li>&#8627;&nbsp;&nbsp;<a href="https://github.com/OliverPSmith" target="_blank">Github</a></li>
-            <li>&#8627;&nbsp;&nbsp;<a href="https://github.com/OliverPSmith" target="_blank">Dribbble</a></li>
+            <li>&#8627;&nbsp;&nbsp;<a href="https://dribbble.com/OliverPSmith" target="_blank">Dribbble</a></li>
             <li>&#8627;&nbsp;&nbsp;<a href="mailto:oliver_smith@hotmail.co.uk">oliver_smith@hotmail.co.uk</a></li>
         </ul>
     </header>
@@ -34,7 +35,7 @@
     <code>//</code>
 
     <main>
-        <section>
+        <section id="section-projects" data-tab-content class="active">
             <h2>Projects</h2>
             <p>--</p>
             <form class="projects-radio">
@@ -122,8 +123,60 @@
                         <li>&#8627;&nbsp;&nbsp;<a href="">Source Code</a></li>
                     </ul>
                 </article>
-                
+                <article>
+                    <div class="article-header">
+                        <h3>Text Formatter,&nbsp;&nbsp;</h3>
+                        <p>javascript</p>
+                    </div>
+                    <div class="article-text">
+                        <p>Count number of Words, Characters, Sentences typed. Change them to Title Text, Uppercase, Lowercase.</p>
+                    </div>
+                    <ul>
+                        <li>&#8627;&nbsp;&nbsp;<a href="">View Live</a></li>
+                        <li>&#8627;&nbsp;&nbsp;<a href="">Source Code</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <div class="article-header">
+                        <h3>Meme Generator,&nbsp;&nbsp;</h3>
+                        <p>javascript</p>
+                    </div>
+                    <div class="article-text">
+                        <p>Using Canvas upload an image from file and add text to it. Save picture to device.</p>
+                    </div>
+                    <ul>
+                        <li>&#8627;&nbsp;&nbsp;<a href="">View Live</a></li>
+                        <li>&#8627;&nbsp;&nbsp;<a href="">Source Code</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <div class="article-header">
+                        <h3>Password Generator,&nbsp;&nbsp;</h3>
+                        <p>javascript</p>
+                    </div>
+                    <div class="article-text">
+                        <p>Using a Form generate a random password.</p>
+                    </div>
+                    <ul>
+                        <li>&#8627;&nbsp;&nbsp;<a href="">View Live</a></li>
+                        <li>&#8627;&nbsp;&nbsp;<a href="">Source Code</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <div class="article-header">
+                        <h3>Weather App,&nbsp;&nbsp;</h3>
+                        <p>javascript</p>
+                    </div>
+                    <div class="article-text">
+                        <p>Usng the 'weatherstack' API, retrieve weather info for anywhere in the world. </p>
+                    </div>
+                    <ul>
+                        <li>&#8627;&nbsp;&nbsp;<a href="">View Live</a></li>
+                        <li>&#8627;&nbsp;&nbsp;<a href="">Source Code</a></li>
+                    </ul>
+                </article>
             </section>
+
             <section id="website-section" style="display: none;">
                 <article>
                     <div class="article-header">
@@ -131,7 +184,7 @@
                         <p>html, css, javascript</p>
                     </div>
                     <div class="article-text">
-                        <p>Tick tac toe game with multiple users using IIFE's and Factories.</p>
+                        <p>Design || Development</p>
                     </div>
                     <ul>
                         <li>&#8627;&nbsp;&nbsp;<a href="">View Live</a></li>
@@ -144,18 +197,58 @@
                         <p>html, css, javascript</p>
                     </div>
                     <div class="article-text">
-                        <p>Tick tac toe game with multiple users using IIFE's and Factories.</p>
+                        <p>Design || Development || Deployment (Hostgator) || Maintenence || Google Console</p>
                     </div>
                     <ul>
                         <li>&#8627;&nbsp;&nbsp;<a href="">View Live</a></li>
                         <li>&#8627;&nbsp;&nbsp;<a href="">Source Code</a></li>
                     </ul>
                 </article>
+                <article>
+                    <div class="article-header">
+                        <h3>Demo Pizza Van,&nbsp;&nbsp;</h3>
+                        <p>html, css, javascript</p>
+                    </div>
+                    <div class="article-text">
+                        <p>Design || Development || Deployment (Netlify)</p>
+                    </div>
+                    <ul>
+                        <li>&#8627;&nbsp;&nbsp;<a href="">View Live</a></li>
+                        <li>&#8627;&nbsp;&nbsp;<a href="">Source Code</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <div class="article-header">
+                        <h3>Demo Personal Trainer,&nbsp;&nbsp;</h3>
+                        <p>html, css, javascript</p>
+                    </div>
+                    <div class="article-text">
+                        <p>Design || Development || Deployment (Netlify)</p>
+                    </div>
+                    <ul>
+                        <li>&#8627;&nbsp;&nbsp;<a href="">View Live</a></li>
+                        <li>&#8627;&nbsp;&nbsp;<a href="">Source Code</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <div class="article-header">
+                        <h3>Old Portfolio&nbsp;&nbsp;</h3>
+                        <p>html, css, javascript</p>
+                    </div>
+                    <div class="article-text">
+                        <p>Design || Development || Deployment (Netlify / Hostgator)</p>
+                    </div>
+                    <ul>
+                        <li>&#8627;&nbsp;&nbsp;<a href="https://portfolio-march2023.netlify.app/" target="_blank">View Live</a></li>
+                        <li>&#8627;&nbsp;&nbsp;<a href="https://github.com/OliverPSmith/portfolioMarch2023?tab=readme-ov-file" target="_blank">Source Code</a></li>
+                    </ul>
+                </article>
             </section>
+
             <section id="design-section" style="display: none;">
                 <article>
                     <div class="article-header">
-                        <h3>Digital Poster: Nike,&nbsp;&nbsp;</h3>
+                        <h3>Digital Poster Concept: Nike,&nbsp;&nbsp;</h3>
                         <p>Figma</p>
                     </div>
                     <img src="images/nikeOne.png" alt="">
@@ -164,7 +257,7 @@
                 </article>
                 <article>
                     <div class="article-header">
-                        <h3>E-commerce App: Yonex,&nbsp;&nbsp;</h3>
+                        <h3>E-commerce App Concept: Yonex,&nbsp;&nbsp;</h3>
                         <p>Figma</p>
                     </div>
                     <img src="images/yonexOne.png" alt="">
@@ -172,7 +265,7 @@
                 </article>
                 <article>
                     <div class="article-header">
-                        <h3>E-commerce: New Balance || Kawhi Leonard,&nbsp;&nbsp;</h3>
+                        <h3>E-commerce App Concept: New Balance,&nbsp;&nbsp;</h3>
                         <p>Figma</p>
                     </div>
                     <img src="images/Kawhi Home.png" alt="">
@@ -186,6 +279,16 @@
                     <img src="images/pistons.png" alt="">
                 </article>
             </section>
+        </section>
+
+        <section id="section-tools" data-tab-content>
+            <h2>Tools & Technologies</h2>
+            <p>--</p>
+        </section>
+
+        <section id="section-about" data-tab-content>
+            <h2>About Me</h2>
+            <p>--</p>
         </section>
         
     </main>
