@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 :root {
-    --bg-col: rgb(234, 228, 220);
+    --bg-col: rgb(249, 244, 236);
     --text-col: black;
     --font-fam: 'Overlock', cursive;
 
@@ -53,12 +53,6 @@ li {
 
 
 
-/* aside {
-    position: fixed;
-    right: 2rem;
-    z-index: 10;
-} */
-
 #menu-btn {
     position: fixed;
     right: 2rem;
@@ -83,6 +77,7 @@ li {
 
 
 
+
 [data-tab-content] {
     display: none;
 }
@@ -102,6 +97,7 @@ main {
 .projects-radio {
     display: flex;
     flex-direction: row;
+    margin-top: .25rem;
 }
 
 label, input {
@@ -150,5 +146,5 @@ article img {
 
 #section-tools ul li {
     font-variant: small-caps;
-    font-size: 16px;
+    font-size: 18px;
 }
