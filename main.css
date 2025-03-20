@@ -172,3 +172,7 @@ article img {
 .design-note {
     margin-bottom: 2rem;
 }
+
+.about-img {
+    border-radius: 5px;
+}
