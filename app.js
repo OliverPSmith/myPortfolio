@@ -7,10 +7,12 @@ const cText = document.querySelector('code');
 const menu = document.querySelector('.menu')
 
 const menuToggle = () => {
+
     header.classList.toggle('active');
     main.classList.toggle('active');
     cText.classList.toggle('active');
     menu.classList.toggle('active');
+    
 }
 
 menuBtn.addEventListener('click', menuToggle);
@@ -33,6 +35,30 @@ tabs.forEach(tab => {
         target.classList.add('active');
         menuToggle();
     });
+});
+
+// DarkMode
+
+const DarkModeBtn = document.getElementById('dark-mode-btn');
+const root = document.documentElement;
+let initialTheme = true;
+
+DarkModeBtn.addEventListener('click', () => {
+
+    if (initialTheme) {
+        root.style.setProperty('--bg-col', 'black');
+        root.style.setProperty('--text-col', 'whitesmoke');
+        DarkModeBtn.innerText = 'LightMode?';
+        initialTheme = false;
+    }   else {
+        root.style.setProperty('--bg-col', 'rgb(249, 244, 236)');
+        root.style.setProperty('--text-col', 'black');
+        DarkModeBtn.innerText = 'DarkMode?';
+        initialTheme = true;
+    }
+
+    menuToggle();
+
 });
 
 

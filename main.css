@@ -18,6 +18,8 @@ body {
     background-color: var(--bg-col);
     font-size: 14px;
     color: var(--text-col);
+
+    transition: .5s;
 }
 
 header, main, code {
@@ -49,6 +51,22 @@ a:hover {
 li {
     list-style: none;
 }
+
+button {
+    background: none;
+    color: var(--text-col);
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    right: 2rem;
+    top: 8rem;
+    z-index: 10;
+    font-size: 10px;
+}
+button:hover {
+    text-decoration: underline;
+}
+
 
 
 
@@ -147,6 +165,8 @@ article img {
 #section-tools ul li {
     font-variant: small-caps;
     font-size: 18px;
+    display: flex;
+    align-items: center;
 }
 
 .design-note {
