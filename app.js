@@ -14,7 +14,6 @@ const menuToggle = () => {
     menu.classList.toggle('active');
     
 }
-
 menuBtn.addEventListener('click', menuToggle);
 
 
@@ -57,7 +56,7 @@ DarkModeBtn.addEventListener('click', () => {
         initialTheme = true;
     }
 
-    menuToggle();
+ //   menuToggle();
 
 });
 
