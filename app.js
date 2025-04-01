@@ -69,17 +69,17 @@ const websiteSection = document.querySelector('#website-section');
 const designRadio = document.querySelector('#design-radio');
 const designSection = document.querySelector('#design-section');
 
-webAppRadio.addEventListener('focus', () => {
+webAppRadio.addEventListener('click', () => {
     webAppSection.style.display = 'block';
     websiteSection.style.display = 'none';
     designSection.style.display = 'none';
 });
-websiteRadio.addEventListener('focus', () => {
+websiteRadio.addEventListener('click', () => {
     webAppSection.style.display = 'none';
     websiteSection.style.display = 'block';
     designSection.style.display = 'none';
 });
-designRadio.addEventListener('focus', () => {
+designRadio.addEventListener('click', () => {
     webAppSection.style.display = 'none';
     websiteSection.style.display = 'none';
     designSection.style.display = 'block';
