@@ -50,13 +50,13 @@ DarkModeBtn.addEventListener('click', () => {
         DarkModeBtn.innerText = 'LightMode?';
         initialTheme = false;
     }   else {
-        root.style.setProperty('--bg-col', 'rgb(249, 244, 236)');
+        root.style.setProperty('--bg-col', 'rgb(255, 255, 255)');
         root.style.setProperty('--text-col', 'black');
         DarkModeBtn.innerText = 'DarkMode?';
         initialTheme = true;
     }
 
- //   menuToggle();
+    menuToggle();
 
 });
 

@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 :root {
-    --bg-col: rgb(249, 244, 236);
+    /* --bg-col: rgb(249, 244, 236); */
+    --bg-col: rgb(255, 255, 255);
     --text-col: black;
     --font-fam: 'Overlock', cursive;
 
@@ -16,10 +17,12 @@ body {
     font-family: var(--font-fam);
     padding: 2rem;
     background-color: var(--bg-col);
-    font-size: 14px;
+    font-size: 13px;
     color: var(--text-col);
 
     transition: .5s;
+
+    letter-spacing: .75px;
 }
 
 header, main, code {
@@ -178,4 +181,9 @@ article img {
     width: 400px;
     filter: grayscale(50%);
     /* background-color: white; */
+}
+
+
+#section-about article p {
+    margin: 10px 0;
 }
