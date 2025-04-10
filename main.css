@@ -7,10 +7,14 @@
     /* --bg-col: rgb(249, 244, 236); */
     --bg-col: rgb(255, 255, 255);
     --text-col: black;
+    --link-col: blue;
     --font-fam: 'Overlock', cursive;
 
-    /* --text-col: whitesmoke;
-    --bg-col: black; */
+    /* 
+    --text-col: whitesmoke;
+    --bg-col: black;
+    --link-col: rgb(0, 174, 255);
+    */
 }
 
 body {
@@ -43,7 +47,7 @@ h1, h2, h3 {
 }
 
 a {
-    color: var(--text-col);
+    color: var(--link-col);
     text-decoration: none;
     cursor: pointer;
 }
@@ -163,6 +167,8 @@ article {
     border: none;
     font-family: var(--font-fam);
     letter-spacing: .75px;
+    font-size: 13px;
+    color: var(--link-col);
 
 }
 

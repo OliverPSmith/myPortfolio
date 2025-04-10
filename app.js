@@ -46,11 +46,13 @@ DarkModeBtn.addEventListener('click', () => {
     if (initialTheme) {
         root.style.setProperty('--bg-col', 'black');
         root.style.setProperty('--text-col', 'whitesmoke');
+        root.style.setProperty('--link-col', 'rgb(0, 174, 255)');
         DarkModeBtn.innerText = 'LightMode?';
         initialTheme = false;
     }   else {
         root.style.setProperty('--bg-col', 'rgb(255, 255, 255)');
         root.style.setProperty('--text-col', 'black');
+        root.style.setProperty('--link-col', 'blue');
         DarkModeBtn.innerText = 'DarkMode?';
         initialTheme = true;
     }
