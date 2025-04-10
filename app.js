@@ -18,7 +18,6 @@ menuBtn.addEventListener('click', menuToggle);
 
 
 // Menu Data Content
-
 const tabs = document.querySelectorAll('[data-tab-target]');
 const tabContents = document.querySelectorAll('[data-tab-content]');
 
@@ -36,8 +35,8 @@ tabs.forEach(tab => {
     });
 });
 
-// DarkMode
 
+// DarkMode
 const DarkModeBtn = document.getElementById('dark-mode-btn');
 const root = document.documentElement;
 let initialTheme = true;
@@ -83,5 +82,16 @@ designRadio.addEventListener('click', () => {
     webAppSection.style.display = 'none';
     websiteSection.style.display = 'none';
     designSection.style.display = 'block';
+});
+
+
+// Display Wordpress project images
+const wPressBtns = document.querySelectorAll('.wordpress-button');
+const wPressImgs = document.querySelectorAll('.wordpress-images');
+
+wPressBtns.forEach((wPressBtn, i) => {
+    wPressBtn.addEventListener('click', () => {
+        wPressImgs[i].classList.toggle('active');
+    });
 });
 

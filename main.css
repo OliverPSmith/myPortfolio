@@ -55,11 +55,10 @@ li {
     list-style: none;
 }
 
-button {
+#dark-mode-btn {
     background: none;
     color: var(--text-col);
     border: none;
-    cursor: pointer;
     position: fixed;
     right: 2rem;
     top: 8rem;
@@ -68,6 +67,7 @@ button {
 }
 button:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 
@@ -158,11 +158,26 @@ article {
     margin-bottom: .25rem;
 }
 
+.wordpress-button {
+    background-color: transparent;
+    border: none;
+    font-family: var(--font-fam);
+    letter-spacing: .75px;
+
+}
+
 article img {
     object-fit: contain;
     /* width: 400px; */
     max-width: 100%;
     /* height: 300px; */
+}
+
+.wordpress-images {
+    display: none;
+}
+.wordpress-images.active {
+    display: block;
 }
 
 #section-tools ul li {
