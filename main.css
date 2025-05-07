@@ -177,6 +177,7 @@ article img {
     /* width: 400px; */
     max-width: 100%;
     /* height: 300px; */
+    border: 1px solid black;
 }
 
 .wordpress-images {
@@ -185,6 +186,7 @@ article img {
 .wordpress-images.active {
     display: block;
 }
+
 
 #section-tools ul li {
     font-variant: small-caps;
