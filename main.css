@@ -8,8 +8,9 @@
     --bg-col: rgb(255, 255, 255);
     --text-col: black;
     --link-col: blue;
-    --font-fam: 'Overlock', cursive;
-
+    /* --font-fam: 'Overlock', cursive; */
+    --font-fam: Courier, monospace; 
+    /* font-family: 'Courier New', Courier, monospace; */
     /* 
     --text-col: whitesmoke;
     --bg-col: black;
