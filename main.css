@@ -248,11 +248,15 @@ article img {
     margin: 10px 0;
 }
 
-#section-tools ul {
+#section-tools article {
+    margin-bottom: 1rem;
+}
+
+/* #section-tools ul {
     margin-bottom: 1rem;
     background-color: #e1e1ee;
     padding: 8px;
     border: 1px solid black;
     line-height: 20px;
     box-shadow: 4px 4px 6px #dddd;
-}
+} */
