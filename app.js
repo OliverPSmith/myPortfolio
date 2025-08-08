@@ -47,12 +47,18 @@ DarkModeBtn.addEventListener('click', () => {
         root.style.setProperty('--bg-col', 'black');
         root.style.setProperty('--text-col', 'whitesmoke');
         root.style.setProperty('--link-col', 'rgb(0, 174, 255)');
+        root.style.setProperty('--article-bg-col', 'rgb(67, 67, 67)');
+        root.style.setProperty('--article-border-col', 'white');
+        root.style.setProperty('--article-shadow-col', '#c6d1dc66');
         DarkModeBtn.innerText = 'LightMode?';
         initialTheme = false;
     }   else {
         root.style.setProperty('--bg-col', 'rgb(255, 255, 255)');
         root.style.setProperty('--text-col', 'black');
         root.style.setProperty('--link-col', 'blue');
+        root.style.setProperty('--article-bg-col', '#e1e1ee');
+        root.style.setProperty('--article-border-col', 'black');
+        root.style.setProperty('--article-shadow-col', '#595d6166');
         DarkModeBtn.innerText = 'DarkMode?';
         initialTheme = true;
     }
